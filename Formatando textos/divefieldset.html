@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+       
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin: 5px;
+            margin-left: 25%;
+            margin-right: 25%;
+            border-radius: 15px;
+            border-color: blueviolet;
+        }
+
+        button {
+            width: 150px;
+            height: 30px;
+            background-image: linear-gradient(to right, purple, black);
+            border-radius: 15px;
+            color: #ffff;
+            font-weight: 700;
+            margin: 0 25% 1% 25%;
+            display: inline-block;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label for="name">Nome:</label><input type="text" />
+            <label for="email">Email:</label><input type="email" />
+        </div>
+        <div class="row">
+            <label for="ocupation">Profissão:</label><input type="text">
+            <label for="business">Empresa:</label><input type="text">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label for="adress">Endereço:</label><input type="text" />
+            <label for="city">Cidade:</label><input type="text" />
+        </div>
+        <div class="row">
+            <label for="bairro">Bairro:</label><input type="text" />
+            <label for="adress-number">Número:</label><input type="number" />
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Redes e contatos</legend>
+        <div class="row">
+            <label for="celphone">Celular:</label><input type="number">
+            <label for="whatsapp">Whatsapp:</label><input type="number">
+        </div>
+        <div class="row">
+            <label for="linkedin">Linkedin:</label><input type="url" />
+            <label for="github">Github:</label><input type="url" />
+        </div>
+    </fieldset>
+    
+
+    <div class="row">
+        <button type="reset" >
+            Limpar
+        </button>
+        <button type="submit" >
+            Enviar formulário
+        </button>
+    </div>
+</body>
+</html>
